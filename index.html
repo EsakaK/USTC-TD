@@ -52,13 +52,13 @@
         </div>
         <div class="navbar-menu">
             <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-                <a class="navbar-item" href="https://keunhong.com">
+                <a class="navbar-item" href="https://ustc-ivclab.github.io/">
                     <span class="icon">
                         <i class="fas fa-home"></i>
                     </span>
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
+                <!-- <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         More Research
                     </a>
@@ -66,7 +66,7 @@
                         <a class="navbar-item" href="">
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -133,7 +133,6 @@
         </div>
     </section>
 
-    <!-- below title -->
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
@@ -150,10 +149,11 @@
     </section>
 
 
+
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
-            <div class="columns">
+            <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
@@ -185,6 +185,18 @@
                 </div>
             </div>
             <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/ Paper video. -->
         </div>
     </section>
 
@@ -193,19 +205,6 @@
         <div class="container is-max-desktop">
 
             <div class="columns is-centered">
-
-                <!-- Paper video. -->
-                <div class="columns">
-                    <div class="column is-four-fifths">
-                        <h2 class="title is-3">Introduction</h2>
-                        <div class="publication-video">
-                            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
-                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <!--/ Paper video. -->
-
                 <!-- Image Dataset -->
                 <div class="column">
                     <div class="content">
@@ -219,26 +218,75 @@
                         </video>
                     </div>
                 </div>
-                <!--/ Image Dataset -->
+                <!--/ Image Dataset. -->
+            </div>
 
+            <div class="columns is-centered">
                 <!-- Video Dataset -->
                 <div class="column">
-                    <h2 class="title is-3">Video Dataset</h2>
-                    <div class="columns is-centered">
-                        <div class="column content">
-                            <p>
-                                As a byproduct of our method, we can also solve the matting problem by ignoring
-                                samples that fall outside of a bounding box during rendering.
-                            </p>
-                            <video id="matting-video" controls playsinline height="100%">
-                                <source src="./static/videos/matting.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
+                    <div class="content">
+                        <h2 class="title is-3">Video Dataset</h2>
+                        <p>
+                            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                            would be impossible without nerfies since it would require going through a wall.
+                        </p>
+                        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
                 <!--/ Video Dataset -->
             </div>
+
+            <!-- Statistic. -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Dataset Statistics</h2>
+                    <!-- Image. -->
+                    <h3 class="title is-4">Image Method</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            We can also animate the scene by interpolating the deformation latent codes of two input
+                            frames. Use the slider here to linearly interpolate between the left frame and the right
+                            frame.
+                        </p>
+                    </div>
+                    <br />
+                    <!--/ Image. -->
+                    <!-- Video. -->
+                    <h3 class="title is-4">Video Method</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            We can also animate the scene by interpolating the deformation latent codes of two input
+                            frames. Use the slider here to linearly interpolate between the left frame and the right
+                            frame.
+                        </p>
+                    </div>
+                    <br />
+                    <!--/ Video. -->
+                </div>
+            </div>
+            <!--/ Animation. -->
+
+
+            <!-- Concurrent Work. -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Related Links</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            There's a lot of excellent work that was introduced around the same time as ours.
+                        </p>
+                        <p>
+                            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a>
+                            introduces an idea similar to our windowed
+                            position encoding for coarse-to-fine optimization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Concurrent Work. -->
+
         </div>
     </section>
 
