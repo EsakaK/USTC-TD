@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nerfies: Deformable Neural Radiance Fields</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://keunhong.com">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More Research
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">USTC-TD: A Test Database and Benchmark for
+                            Learned Image and Video Compression</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Author -->
+                            <span class="author-block">
+                                <a href="https://esakak.world/PersonalPage">Yifan Bian</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                Yao Li<sup>1</sup>,</span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>University of Washington,</span>
+                            <span class="author-block"><sup>2</sup>Google Research</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2011.12948"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/Junqi98/USTC-TD-dataset"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="far fa-images"></i>
+                                        </span>
+                                        <span>Data</span>
+                                    </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- below title -->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video id="teaser" autoplay muted loop playsinline height="100%">
+                    <source src="./static/videos/teaser.mp4" type="video/mp4">
+                </video>
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+                    free-viewpoint
+                    portraits.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Learnable end-to-end (E2E) image/video compression
+                            has been a remarkable research for both academia and
+                            industry in recent years. Testing datasets, especially high quality
+                            image/video datasets are desirable for efficient validation of
+                            related researches, practical applications and standardization
+                            activities. In this report, we put forward a test database for
+                            compression-related systems, named USTC-TD. The proposed
+                            database has been applied in the image/video compression
+                            challenge of IEEE International Conference on Visual Com-
+                            munications and lmage Processing (VCIP Challenge) in 2022
+                            and 2023. USTC-TD contains 40 images at 2160p (4K) spatial
+                            resolution and 10 sequences at 1080P spatial resolution, which is
+                            captured in diverse content covering different texture and scene
+                            types. Furthermore, we evaluate the proposed database with
+                            different metrics (PSNR, MS-SSIM, et al.) on recent advanced
+                            E2E compression algorithms, such as iWave++, DVC, CANF,
+                            DCVC, outstanding schemes of VCIP Challenge, standardization
+                            activities (High Efficiency Video Coding (HEVC), Versatile Video
+                            Coding (VVC), IEEE 1857.11, AVS-EEM), and et al. We provide
+                            an extended baseline for state-of-the-art compression systems
+                            benchmarked on USTC-TD. The database and benchmark data
+                            are released on website
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+
+            <div class="columns is-centered">
+
+                <!-- Paper video. -->
+                <div class="columns">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Introduction</h2>
+                        <div class="publication-video">
+                            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Paper video. -->
+
+                <!-- Image Dataset -->
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">Image Dataset</h2>
+                        <p>
+                            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                            would be impossible without nerfies since it would require going through a wall.
+                        </p>
+                        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!--/ Image Dataset -->
+
+                <!-- Video Dataset -->
+                <div class="column">
+                    <h2 class="title is-3">Video Dataset</h2>
+                    <div class="columns is-centered">
+                        <div class="column content">
+                            <p>
+                                As a byproduct of our method, we can also solve the matting problem by ignoring
+                                samples that fall outside of a bounding box during rendering.
+                            </p>
+                            <video id="matting-video" controls playsinline height="100%">
+                                <source src="./static/videos/matting.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+                <!--/ Video Dataset -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            This means you are free to borrow the <a
+                                href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+                            we just ask that you link back to this page in the footer.
+                            Please remember to remove the analytics code included in the header of the website which
+                            you do not want on your website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
