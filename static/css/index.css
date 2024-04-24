@@ -189,3 +189,14 @@ img.roundimg {
   transform: translate(-51%, -51%);
   transition: all 0.5s ease;
 }
+
+.gif {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.gif img {
+  width: 20%;
+  margin: 2px;
+}
