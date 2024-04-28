@@ -200,3 +200,10 @@ img.roundimg {
   width: 20%;
   margin: 2px;
 }
+
+.block-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

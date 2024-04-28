@@ -147,7 +147,8 @@
         <center><img src="static/images/datasets/top.webp" border="0" width="100%"></center>
         <!-- <h2 class="subtitle has-text-centered"> -->
         <div align="center">
-            <p style="text-align:justify; text-justify:inter-ideograph;width:100%">Figure 1. Examples of USTC Image Test
+            <p style="text-align:justify; text-justify:inter-ideograph;width:100%; text-align: center;">Figure 1.
+                Examples of USTC Image Test
                 Dataset. </p>
         </div>
         <br>
@@ -212,7 +213,8 @@
                         <center><img src="static/images/datasets/2022.webp" border="0" width="100%"></center>
                         <!-- <h2 class="subtitle has-text-centered"> -->
                         <div align="center">
-                            <p style="text-align:justify; text-justify:inter-ideograph;width:100%">Figure 2.
+                            <p style="text-align:justify; text-justify:inter-ideograph;width:100%;text-align: center;">
+                                Figure 2.
                                 Illustration of the image database in USTC-TD 2022. </p>
                         </div>
                         <br>
@@ -222,7 +224,8 @@
                         <center><img src="static/images/datasets/2023.webp" border="0" width="100%"></center>
                         <!-- <h2 class="subtitle has-text-centered"> -->
                         <div align="center">
-                            <p style="text-align:justify; text-justify:inter-ideograph;width:100%">Figure 2.
+                            <p style="text-align:justify; text-justify:inter-ideograph;width:100%;text-align: center;">
+                                Figure 3.
                                 Illustration of the image database in USTC-TD 2023. </p>
                         </div>
                         <br>
@@ -287,10 +290,48 @@
                             the evaluation of experimental
                             results more closer to the actual application.
                         </p>
+                        <div align="center">
+                            <b>TABLE 1. THE CONFIGURATION OF USTC-TD 2022 IMAGE DATABASE.</b>
+                            <center> <img src="static/images/illustration/image_cons1.png"></center>
+                        </div>
+                        <br>
+                        <div align="center">
+                            <b>TABLE 2. THE CONFIGURATION OF USTC-TD 2023 IMAGE DATABASE.</b>
+                            <center> <img src="static/images/illustration/image_cons2.png"></center>
+                        </div>
+                        <br>
+                        <div align="center">
+                            <b>TABLE 3. THE CONFIGURATION OF USTC-TD 2023 VIDEO DATABASE.</b>
+                            <center> <img src="static/images/illustration/video_cons.png"></center>
+                        </div>
                     </div>
 
                     <!-- Distribution. -->
                     <h3 class="title is-4">Analysis</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            To further verify the wide coverage and diversity of our
+                            proposed dataset for different scenes, we evaluate the USTCTD on different image/video
+                            features, and compare it with
+                            the previous image/video common test datasets.
+                            For
+                            analysis of image/video features, we select spatial information
+                            (SI), temporal information (TI), colourfulness
+                            (CF) and lightness information (LI) to characterize
+                            each dataset along the dimensions of color, space, and temporal correlation, which is
+                            commonly used to evaluate the quality
+                            of dataset.
+                        </p>
+                        <center><img src="static/images/illustration/image_analysis.png" border="0" width="70%">
+                        </center>
+                        <div align="center">
+                            <p style="text-align:justify; text-justify:inter-ideograph;width:100%;text-align: center;">
+                                Figure 4.
+                                Spatial information (SI) versus colorfulness (CF), and corresponding convex hulls of
+                                different image testing databases. </p>
+                        </div>
+                        <br>
+                    </div>
                 </div>
             </div>
 
@@ -322,7 +363,7 @@
                         <!--Table 1-->
                         <div class="columns is-centered">
                             <table border="0.6">
-                                <caption><b>TABLE 1. BD-RATE (%) FOR PSNR.</b><br>
+                                <caption><b>TABLE 4. BD-RATE (%) FOR PSNR.</b><br>
                                     <font color="#737373">The anchor is VTM.</font>
                                 </caption>
                                 <!-- The newly built MOSE has the longest video duration and largest objects and annotations. More important, the most notable feature of MOSE is that it contains lots of crowds, occlusions, and disappearance-reappearance objects, which provide more complex scenarios for VOS. -->
@@ -330,32 +371,28 @@
                                     <tr>
                                         <th align="right" bgcolor="#BBBBBB"></th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
+                                            <a href="https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM"
                                                 target="_blank">VTM</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">HM</a>
+                                            <a href="https://vcgit.hhi.fraunhofer.de/jvet/HM" target="_blank">HM</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
+                                            <a href="https://www.researchgate.net/profile/Guo-Lu-3/publication/340799869_An_End-to-End_Learning_Framework_for_Video_Compression/links/5fcf3b70a6fdcc697bebbc88/An-End-to-End-Learning-Framework-for-Video-Compression.pdf"
                                                 target="_blank">DVC_Pro</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
+                                            <a href="https://proceedings.neurips.cc/paper_files/paper/2021/file/96b250a90d3cf0868c83f8c965142d2a-Paper.pdf"
                                                 target="_blank">DCVC</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">CANF-VC</a>
+                                            <a href="https://arxiv.org/pdf/2207.05315" target="_blank">CANF-VC</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">TCM-VC</a>
+                                            <a href="https://arxiv.org/pdf/2111.13850" target="_blank">TCM-VC</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">DCVC-HEM</a>
+                                            <a href="https://arxiv.org/pdf/2207.05894" target="_blank">DCVC-HEM</a>
                                         </th>
                                     </tr>
                                     <tr>
@@ -443,8 +480,7 @@
                                         <td align="center">-1.6</td>
                                     </tr>
                                     <tr>
-                                        <td align="right" style="color: red;" bgcolor="#dbdbdb" bgcolor="#dbdbdb">
-                                            USTC-TD</td>
+                                        <td align="right" style="color: red;" bgcolor="#dbdbdb">USTC-TD</td>
                                         <td align="center" bgcolor="#dbdbdb" bgcolor="#dbdbdb">0.0</td>
                                         <td align="center" bgcolor="#dbdbdb" bgcolor="#dbdbdb">0.0</td>
                                         <td align="center" bgcolor="#dbdbdb" bgcolor="#dbdbdb">0.0</td>
@@ -461,7 +497,7 @@
                         <br>
                         <div class="columns is-centered">
                             <table border="0.6">
-                                <caption><b>TABLE 1. BD-RATE (%) FOR MS-SSIM.</b><br>
+                                <caption><b>TABLE 5. BD-RATE (%) FOR MS-SSIM.</b><br>
                                     <font color="#737373">The anchor is VTM.</font>
                                 </caption>
                                 <!-- The newly built MOSE has the longest video duration and largest objects and annotations. More important, the most notable feature of MOSE is that it contains lots of crowds, occlusions, and disappearance-reappearance objects, which provide more complex scenarios for VOS. -->
@@ -469,32 +505,28 @@
                                     <tr>
                                         <th align="right" bgcolor="#BBBBBB"></th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
+                                            <a href="https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM"
                                                 target="_blank">VTM</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">HM</a>
+                                            <a href="https://vcgit.hhi.fraunhofer.de/jvet/HM" target="_blank">HM</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
+                                            <a href="https://www.researchgate.net/profile/Guo-Lu-3/publication/340799869_An_End-to-End_Learning_Framework_for_Video_Compression/links/5fcf3b70a6fdcc697bebbc88/An-End-to-End-Learning-Framework-for-Video-Compression.pdf"
                                                 target="_blank">DVC_Pro</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
+                                            <a href="https://proceedings.neurips.cc/paper_files/paper/2021/file/96b250a90d3cf0868c83f8c965142d2a-Paper.pdf"
                                                 target="_blank">DCVC</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">CANF-VC</a>
+                                            <a href="https://arxiv.org/pdf/2207.05315" target="_blank">CANF-VC</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">TCM-VC</a>
+                                            <a href="https://arxiv.org/pdf/2111.13850" target="_blank">TCM-VC</a>
                                         </th>
                                         <th align="center" bgcolor="#BBBBBB">
-                                            <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html"
-                                                target="_blank">DCVC-HEM</a>
+                                            <a href="https://arxiv.org/pdf/2207.05894" target="_blank">DCVC-HEM</a>
                                         </th>
                                     </tr>
                                     <tr>
@@ -621,12 +653,9 @@
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>@article{park2021nerfies,
-                author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-                title     = {Nerfies: Deformable Neural Radiance Fields},
-                journal   = {ICCV},
-                year      = {2021},
-                }</code></pre>
+            <pre><code>
+
+            </code></pre>
         </div>
     </section>
 
