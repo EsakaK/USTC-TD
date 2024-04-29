@@ -1,16 +1,35 @@
-# Nerfies
+# USTC-TD dataset
+## :computer:Authors
+This dataset is authored by iVC Lab in USTC.
+### :house_with_garden:Our homepage
+[iVC Lab](https://ustc-ivclab.github.io/)
+### :e-mail:Contact us
+liaojq@mail.ustc.edu.cn / zhuoyuanli@mail.ustc.edu.cn
+## :arrow_down:Download
+### :camera:USTC-TD image dataset
+:link:[USTC-TD image dataset](https://rec.ustc.edu.cn/share/d0aa6460-ef6e-11ee-accf-f9b5640aed52)
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+:key:The password is: 8a9v
 
-If you find Nerfies useful for your work please cite:
-```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
-```
+This zip file includes images in rgb, yuv420, and yuv444 formats.
+### :movie_camera:USTC-TD video dataset
+#### RGB format
+:link:[USTC-TD video dataset rgb](https://rec.ustc.edu.cn/share/ee974710-ef6e-11ee-8772-83f366eeb352)
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+:key:The password is: 3vyd
+
+This zip file includes videos in rgb format.
+#### YUV444 format
+:link:[USTC-TD video dataset yuv444](https://rec.ustc.edu.cn/share/21ea7530-ef6f-11ee-9381-fbc2b60358f7)
+
+:key:The password is: 80wp
+
+This zip file includes videos in YUV444 format.
+#### YUV420P format
+:link:[USTC-TD video dataset yuv420p](https://rec.ustc.edu.cn/share/611e78e0-ef6f-11ee-899d-9d5fa7b6e594)
+
+:key:The password is: xzul
+
+This zip file includes videos in YUV420P format.
+## :newspaper:Paper
+Comming soon...
