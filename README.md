@@ -34,7 +34,13 @@ This zip file includes videos in YUV420P format.
 ## :newspaper:Paper
 Comming soon...
 
-## Tools
+## Code
 We provide the code of PSNR/MS-SSIM calculation, color space conversion between YUV420 and RGB (BT.709), and drawing image/video RD-curves benchmarked on USTC-TD in `code`. 
+
+## Contact
+If you have any questions or advice on these datasets, please contact us:
+Zhuoyuan Li: email-zhuoyuanli@mail.ustc.edu.cn, wechat-ustc_lizhuoyuan
+Junqi Liao: email-liaojq@mail.ustc.edu.cn, wechat-liaojq98
+
 
 
