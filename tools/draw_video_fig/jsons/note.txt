@@ -1,0 +1,5 @@
+以下codec只有PSNR训练模型：
+EEM
+DCVC-FM
+OOFE
+CANF
