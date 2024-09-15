@@ -14,9 +14,9 @@ liaojq@mail.ustc.edu.cn / zhuoyuanli@mail.ustc.edu.cn
 This zip file includes images in rgb, yuv420, and yuv444 formats.
 ### :movie_camera:USTC-TD video dataset
 #### RGB format
-:link:[USTC-TD video dataset rgb](https://rec.ustc.edu.cn/share/ee974710-ef6e-11ee-8772-83f366eeb352)
+:link:[USTC-TD video dataset rgb](https://rec.ustc.edu.cn/share/a7ebf430-611a-11ef-b104-c5117e3741e9)
 
-:key:The password is: 3vyd
+:key:The password is: rf62
 
 This zip file includes videos in rgb format.
 #### YUV444 format
