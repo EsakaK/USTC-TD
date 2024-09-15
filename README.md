@@ -1,6 +1,6 @@
 # USTC-TD dataset
 ## :computer:Authors
-This dataset is authored by iVC Lab in USTC.
+This dataset is provided by iVC Lab in USTC.
 ### :house_with_garden:Our homepage
 [iVC Lab](https://ustc-ivclab.github.io/)
 ### :e-mail:Contact us
