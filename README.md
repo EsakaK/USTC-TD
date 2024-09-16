@@ -32,7 +32,7 @@ This zip file includes videos in YUV444 format.
 
 This zip file includes videos in YUV420P format.
 ## :newspaper:Paper
-Comming soon...
+The paper is now accessible on [arxiv](https://arxiv.org/abs/2409.08481).
 
 ## Code
 We provide the code of PSNR/MS-SSIM calculation, color space conversion between YUV420 and RGB (BT.709), and drawing image/video RD-curves benchmarked on USTC-TD in `code`. 
