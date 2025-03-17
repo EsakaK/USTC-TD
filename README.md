@@ -37,9 +37,9 @@ This zip file includes images in rgb, yuv420, and yuv444 formats.
 The compression results of all test baseline codecs on the USTC-TD dataset are integrated in the above tools.
 
 ## :newspaper:Paper
-The paper is now accessible on [arxiv](https://github.com/ZhuoyuanLi1997/ZhuoyuanLi1997.github.io/blob/main/files/USTC-TD/USTC-TD.pdf).
+The paper is now accessible on [arxiv](https://zhuoyuanli1997.github.io/files/USTC-TD/USTC-TD.pdf).
 
-The supplementary material is now accessible on [arxiv](https://github.com/ZhuoyuanLi1997/ZhuoyuanLi1997.github.io/blob/main/files/USTC-TD/sup.pdf).
+The supplementary material is now accessible on [arxiv](https://zhuoyuanli1997.github.io/files/USTC-TD/sup.pdf).
 
 
 ## Code
