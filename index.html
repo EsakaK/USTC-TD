@@ -113,10 +113,10 @@
                             <span class="author-block"> <a href="https://faculty.ustc.edu.cn/lil1/en">Li
                                     Li</a>,</span>
                             <span class="author-block"> <a href="https://faculty.ustc.edu.cn/dongeliu/">Dong
-                                    Liu</a>,</span><!-- <i class="fas fa-envelope icon" style="font-size: 12px; color: #116eda"></i> -->
+                                    Liu*</a>,</span><!-- <i class="fas fa-envelope icon" style="font-size: 12px; color: #116eda"></i> -->
                             <span class="author-block"> <a
                                     href="https://scholar.google.com/citations?user=5bInRDEAAAAJ&hl=zh-CN">Feng
-                                    Wu</a></span>
+                                    Wu*</a></span>
                         </div>
 
                         <div class="is-size-5 publication-authors">
@@ -204,29 +204,30 @@
                         <p>
                             Image/video coding has been a remarkable research
                             area for both academia and industry for many years. Testing
-                            datasets, especially high-quality image/video datasets are desirable for the justified
-                            evaluation of coding-related research,
+                            datasets, especially high-quality image/video datasets are desirable
+                            for the justified evaluation of coding-related research,
                             practical applications, and standardization activities. We put
                             forward a test dataset namely USTC-TD, which has been
                             successfully adopted in the practical end-to-end image/video
                             coding challenge of the IEEE International Conference on Visual
-                            Communications and lmage Processing (VCIP) in 2022 and 2023.
+                            Communications and Image Processing (VCIP) in 2022 and 2023.
                             USTC-TD contains 40 images at 4K spatial resolution and 10
                             video sequences at 1080p spatial resolution, featuring various
-                            content due to the diverse environmental factors (e.g. scene type,
-                            texture, motion, view) and the designed imaging factors (e.g.
-                            illumination, lens, shadow). We quantitatively evaluate USTCTD on different image/video
-                            features (spatial, temporal, color,
-                            lightness), and compare it with the previous image/video test
-                            datasets, which verifies the wider coverage and more diversity of
-                            the proposed dataset. We also evaluate both classic standardized
-                            and recent learned image/video coding schemes on USTC-TD
-                            with PSNR and MS-SSIM, and provide an extensive benchmark
-                            for the evaluated schemes. Based on the characteristics and
-                            specific design of the proposed test dataset, we analyze the
-                            benchmark performance and shed light on the future research
-                            and development of image/video coding. All the data are released
-                            online: <a href="https://esakak.github.io/USTC-TD">https://esakak.github.io/USTC-TD</a>.
+                            content due to the diverse environmental factors (e.g. scene
+                            type, texture, motion, view) and the designed imaging factors
+                            (e.g. illumination, lens, shadow). We quantitatively evaluate
+                            USTC-TD on different image/video features (spatial, temporal,
+                            color, lightness), and compare it with the previous image/video
+                            test datasets, which verifies its excellent compensation for the
+                            shortcomings of existing datasets. We also evaluate both classic
+                            standardized and recently learned image/video coding schemes
+                            on USTC-TD using objective quality metrics (PSNR, MS-SSIM,
+                            VMAF) and subjective quality metric (MOS), providing an
+                            extensive benchmark for these evaluated schemes. Based on the
+                            characteristics and specific design of the proposed test dataset,
+                            we analyze the benchmark performance and shed light on the
+                            future research and development of image/video coding.
+                            All the data are released online on this website.
                         </p>
                     </div>
                 </div>
@@ -412,7 +413,34 @@
                                 datasets. The histogram represents the number of videos under different TI
                                 scores.</p><br>
                         </div>
+                        <div align="center">
+                            <b>TABLE 4. QUANTITATIVE RESULTS OF THE USTC-TD 2022 AND 2023 IMAGE DATASETS.
+                                NOTE THAT THE HIGHER SCORES ARE REPRESENTED IN RED,
+                                AND THE LOWER SCORES ARE REPRESENTED IN BLUE.</b>
+                            <center> <img src="static/images/illustration/image_analisis_table.png" border="0" width="60%"></center>
+                        </div>
                         <br>
+                        <div align="center">
+                            <b>TABLE 5. QUANTITATIVE RESULTS OF THE USTC-TD 2023 VIDEO DATASETS.
+                                NOTE THAT THE HIGHER SCORES ARE REPRESENTED IN RED,
+                                AND THE LOWER SCORES ARE REPRESENTED IN BLUE.</b>
+                            <center> <img src="static/images/illustration/video_analysis_table.png" border="0" width="60%"></center>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- Dataset Recommendation. -->
+                    <h3 class="title is-4">Dataset Recommendation</h3>
+                    <p>
+                    Here we discuss their desirable collaboration for future compression research, and further put forward the different recommended presets of USTC-TD and existing image/video
+                    datasets with the consideration of practical utilization.
+                    </p>
+                    <br>
+                    <div class="content has-text-justified">
+                        <div align="center">
+                            <b>TABLE 6. THREE RECOMMENDED PRESETS OF THE EXISTING IMAGE/VIDEO DATASETS AND THE PROPOSED USTC-TD FOR THE PRACTICAL EVALUATION OF IMAGE/VIDEO COMPRESSION SCHEMES.</b>
+                            <center> <img src="static/images/datasets/recommanded.png"></center>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -435,9 +463,8 @@
                         </center>
                         <div align="center">
                             <p style="text-align:justify; text-justify:inter-ideograph;width:100%;text-align: center;">
-                                Figure 8. Overall rate-distortion (RD) curves of advanced image compression schemes on
-                                PSNR and MS-SSIM metrics, the results are evaluated on USTC-TD
-                                image dataset 2022 and 2023.</p>
+                                Figure 8. Overall rate-distortion (RD) curves of advanced image compression schemes on different metrics. From left to right, 
+                                the results are evaluated by PSNR, MS-SSIM, VMAF (MSE model), and VMAF (MS-SSIM model) metrics on USTC-TD image dataset.</p>
                         </div>
                     </div>
                     <div class="content has-text-justified">
@@ -445,9 +472,17 @@
                         </center>
                         <div align="center">
                             <p style="text-align:justify; text-justify:inter-ideograph;width:100%;text-align: center;">
-                                Figure 9. Overall rate-distortion (RD) curves of advanced video compression schemes on
-                                PSNR and MS-SSIM metrics, the results are evaluated on USTC-TD
-                                video dataset 2023.</p>
+                                Figure 9. Overall rate-distortion (RD) curves of advanced video compression schemes on different metrics. From left to right, 
+                                the results are evaluated by PSNR, MS-SSIM, VMAF (MSE model), and VMAF (MS-SSIM model) metrics on USTC-TD video dataset.</p>
+                        </div>
+                    </div>
+                    <div class="content has-text-justified">
+                        <center><img src="static/images/datasets/nerv_rd.png" border="0" width="48%">
+                        </center>
+                        <div align="center">
+                            <p style="text-align:justify; text-justify:inter-ideograph;width:100%;text-align: center;">
+                                Figure 10. Overall rate-distortion (RD) curves of INR-based video compression schemes on different metrics. From left to right, 
+                                the results are evaluated by PSNR and MS-SSIM metrics on USTC-TD video dataset.</p>
                         </div>
                     </div>
 
@@ -455,14 +490,51 @@
                     <h3 class="title is-4">BD-RATE for PSNR/MS-SSIM Metrics</h3>
                     <div class="content has-text-justified">
                         <div align="center">
-                            <b>TABLE IV. BD-RATE (%) COMPARISON FOR PSNR. THE ANCHOR IS VTM.</b>
+                            <b>TABLE 7. BD-RATE (%) COMPARISON FOR PSNR. SHORT SETTING WITH <br>INTRA PERIORD = 32. THE ANCHOR IS VTM.</b>
                             <center> <img src="static/images/datasets/video_psnr.png"></center>
                         </div>
                     </div>
                     <div class="content has-text-justified">
                         <div align="center">
-                            <b>TABLE V. BD-RATE (%) COMPARISON FOR MS-SSIM. THE ANCHOR IS VTM.</b>
+                            <b>TABLE 8. BD-RATE (%) COMPARISON FOR MS-SSIM. SHORT SETTING WITH <br>INTRA PERIORD = 32. THE ANCHOR IS VTM.</b>
                             <center> <img src="static/images/datasets/video_msssim.png"></center>
+                        </div>
+                    </div>
+                    <div class="content has-text-justified">
+                        <div align="center">
+                            <b>TABLE 9. BD-RATE (%) COMPARISON FOR VMAF (MSE model), VMAF (MS-SSIM model). SHORT SETTING WITH <br>INTRA PERIORD = 32. THE ANCHOR IS VTM.</b>
+                            <center> <img src="static/images/datasets/VMAF1.png"></center>
+                        </div>
+                    </div>
+                    <div class="content has-text-justified">
+                        <div align="center">
+                            <b>TABLE 10. BD-RATE (%) COMPARISON FOR PSNR, MS-SSIM, VMAF (MSE model), VMAF (MS-SSIM model). SHORT SETTING WITH <br>INTRA PERIORD = 32. THE ANCHOR IS VTM.</b>
+                            <center> <img src="static/images/datasets/VMAF2.png"></center>
+                        </div>
+                    </div>
+                    <div class="content has-text-justified">
+                        <div align="center">
+                            <b>TABLE 11. BD-RATE (%) COMPARISON FOR PSNR, MS-SSIM, VMAF (MSE model), VMAF (MS-SSIM model). SHORT SETTING WITH INTRA PERIORD = -1. THE ANCHOR IS VTM.</b>
+                            <center> <img src="static/images/datasets/VMAF3.png"></center>
+                        </div>
+                    </div>
+
+                    <!-- MOS. -->
+                    <h3 class="title is-4">MOS results for advanced image and video compression schemes</h3>
+                    <div class="content has-text-justified">
+                        <div align="center">
+                            <b>TABLE 12. THE OVERALL MOS RESULTS OF COMPRESSED IMAGES OF CLASSIC STANDARDIZED AND ADVANCED LEARNED IMAGE COMPRESSION
+                                SCHEMES, WHERE BLUE REPRESENTS THE LOWEST SCORE AND RED
+                                REPRESENTS THE HIGHEST SCORE.</b>
+                            <center> <img src="static/images/datasets/MOS_image.png" border="0" width="48%"></center>
+                        </div>
+                    </div>
+                    <div class="content has-text-justified">
+                        <div align="center">
+                            <b>TABLE 13. THE OVERALL MOS RESULTS OF COMPRESSED VIDEOS OF CLASSIC STANDARDIZED AND ADVANCED LEARNED VIDEO COMPRESSION
+                                SCHEMES, WHERE BLUE REPRESENTS THE LOWEST SCORE AND RED
+                                REPRESENTS THE HIGHEST SCORE.</b>
+                            <center> <img src="static/images/datasets/MOS_video.png" border="0" width="48%"></center>
                         </div>
                     </div>
                 </div>
