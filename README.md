@@ -1,4 +1,4 @@
-# USTC-TD dataset
+# USTC-TD: A Test Dataset and Benchmark for Image and Video Coding in 2020s
 ## :computer:Authors
 This dataset is provided by iVC Lab in USTC.
 ### :house_with_garden:Our homepage
@@ -14,12 +14,12 @@ liaojq@mail.ustc.edu.cn / zhuoyuanli@mail.ustc.edu.cn
 This zip file includes images in rgb, yuv420, and yuv444 formats.
 ### :movie_camera:USTC-TD video dataset
 #### Short Videos, format: RGB, YUV420, YUV444
-:link:[USTC-TD video dataset short](https://rec.ustc.edu.cn/share/bd349810-030e-11f0-8a36-11fa7acdef00)
+:link:[USTC-TD short video dataset (96 Frames)](https://rec.ustc.edu.cn/share/bd349810-030e-11f0-8a36-11fa7acdef00)
 
 :key:The password is: cru9
 
 #### Long Videos, format: RGB, YUV420, YUV444
-:link:[USTC-TD video dataset long](https://rec.ustc.edu.cn/share/ae78e8a0-030e-11f0-9d4a-29cd17f780eb)
+:link:[USTC-TD long video dataset (300 Frames)](https://rec.ustc.edu.cn/share/ae78e8a0-030e-11f0-9d4a-29cd17f780eb)
 
 :key:The password is: yjdm
 
@@ -43,7 +43,7 @@ The supplementary material is now accessible on [arxiv](https://zhuoyuanli1997.g
 
 
 ## Code
-We provide the code of PSNR/MS-SSIM calculation, color space conversion between YUV420 and RGB (BT.709), and drawing image/video RD-curves benchmarked on USTC-TD in `code`. 
+We provide the code of PSNR/MS-SSIM calculation, and drawing image/video RD-curves benchmarked on USTC-TD in `code`. 
 
 ## Contact
 If you have any questions or advice on these datasets, please contact us:
